@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Data Entry</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    
+
+    <!-- Form inside a bootstrap container -->
+    <div class="container mt-5">
+        <form id="dataForm" class="mb-4">
+            <h1>Data Entry Form</h1>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name"  class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required > <br>
+          </div>
+          <button type="submit"  id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      <!-- Data table -->
+        <table id="dataTable" class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+        </table>
+      </div>
 
     <script src="index.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
 </body>
 </html>
